@@ -1,0 +1,30 @@
+{
+	"name": "npm-test-vue-component",
+	"version": "1.0.0",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/npm-test-vue-component.umd.cjs",
+	"module": "./dist/npm-test-vue-component.js",
+	"types": "./dist/main.d.js",
+	"exports": {
+		".": {
+			"import": "./dist/npm-test-vue-component.js",
+			"require": "./dist/npm-test-vue-component.umd.js"
+		}
+	},
+	"./dist/style.css": "./dist/style.css",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build && vue-tsc --emitDeclarationOnly",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"vue": "^3.5.13"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.2.1",
+		"vite": "^6.0.1"
+	}
+}
